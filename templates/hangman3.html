@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>basic form</title>
+
+</head>
+
+<body>
+  {% if  output == 0 %}
+    <h2 style="color:Blue;">Sorry {{username}}!</h2> 
+    <img src="https://media4.giphy.com/media/3ohzAvVCE0LHweIk3S/200.webp?cid=ecf05e47pqj8kkmii2k0r9vhl4scn3zhcrcslya0ytx3xixh&rid=200.webp" width="400" height="200">
+  {% else %}
+    <h2 style="color:Blue;">Congratulations {{username}}!</h2>
+    <img src="https://i.gifer.com/755t.gif" width="400" height="200">
+  {% endif %}
+</body>
+</html>

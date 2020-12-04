@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Welcome site</title>
+
+
+</head>
+
+<body>
+ <h1 style="color:green;" align="center">Welcome to Hangman game!</h1>
+ <img src="https://thumbs.dreamstime.com/b/hangman-game-green-chalkboard-word-solution-missing-i-30318876.jpg" alt="Hangman game" width="550"
+     height="200">
+ <form method='POST' action='/game'>
+  <table style="background-color: #ccffee;">
+    <tr>
+      <td> Please enter your name:</td>
+      <td><input name="username" type="text"></td>
+    </tr>
+    <tr>
+      <td>Your word looks like this</td>
+      <td>
+      <ul>
+        {% for char in word %}
+          <li>_*</li>
+        {% endfor %}
+        </ul>
+      </td>
+    </tr>  
+    <tr>
+      <td>
+    <p style="color:red;"> Please play the game in CLI</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p style="color:red;"> Sorry for the inconvenience</p>
+    </td>
+    </tr>
+     <tr>
+      <td><button type="SUBMIT">Enter the game</td>
+    </tr>
+  </table>
+  </form>
+ 
+</body>
+</html>
+
