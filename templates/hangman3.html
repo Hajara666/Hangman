@@ -9,12 +9,19 @@
 </head>
 
 <body>
-  {% if  output == 0 %}
+	{% if  output == 0 %}<!--User failed-->
     <h2 style="color:Blue;">Sorry {{username}}!</h2> 
     <img src="https://media4.giphy.com/media/3ohzAvVCE0LHweIk3S/200.webp?cid=ecf05e47pqj8kkmii2k0r9vhl4scn3zhcrcslya0ytx3xixh&rid=200.webp" width="400" height="200">
-  {% else %}
+    <p> Correct word is {{word}}</p>
+    {% else %}<!--User win-->
     <h2 style="color:Blue;">Congratulations {{username}}!</h2>
     <img src="https://i.gifer.com/755t.gif" width="400" height="200">
+    <p>You have guessed the word {{word}} correctly! </p><!--prints the word-->
   {% endif %}
+  <form method='POST' action='/'>
+  <table style="background-color: #ccffee;">
+	  <tr><td> Want to play again?</td></tr><!--Goes to Home page-->
+    <tr><td><td><button type="SUBMIT">Home</td></tr>
+  </table></form>
 </body>
 </html>
